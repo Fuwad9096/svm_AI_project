@@ -50,7 +50,7 @@ predict_sms("Hi, are we meeting tomorrow at 3 PM?")
 
 | File | Description |
 |---|---|
-| `SMS_Spam_SVM_Upgraded.ipynb` | Full notebook: EDA, preprocessing, feature engineering, model training, tuning, evaluation, explainability |
+| `SMS_Spam_SVM_Upgraded.py` | Full notebook: EDA, preprocessing, feature engineering, model training, tuning, evaluation, explainability |
 | `sms_spam_model.pkl` | Saved trained pipeline (generated after running the notebook) |
 
 ## Metrics reported
