@@ -61,6 +61,29 @@ predict_sms("Hi, are we meeting tomorrow at 3 PM?")
 - Precision-recall curve
 - Top 15 spam-indicative and ham-indicative features (by SVM coefficient weight)
 
+## Results
+
+Evaluated on the held-out test set (20% of the data, 1,034 messages: 903 ham, 131 spam).
+
+### Upgraded model: test-set metrics
+
+| Metric | Score |
+|---|---|
+| Accuracy | 0.9855 |
+| Precision (spam) | 0.9531 |
+| Recall (spam) | 0.9313 |
+| F1 (spam) | 0.9421 |
+
+### Classification report
+
+| Class | Precision | Recall | F1-score | Support |
+|---|---|---|---|---|
+| Ham (0) | 0.99 | 0.99 | 0.99 | 903 |
+| Spam (1) | 0.95 | 0.93 | 0.94 | 131 |
+| **Accuracy** | | | **0.99** | 1034 |
+| Macro avg | 0.97 | 0.96 | 0.97 | 1034 |
+| Weighted avg | 0.99 | 0.99 | 0.99 | 1034 |
+
 ## Possible extensions
 
 - Character-level n-grams (`analyzer='char_wb'`) to catch obfuscated spam (e.g., "fr33", "V1@gra")
